@@ -40,4 +40,4 @@ async def embed(ctx):
 async def pic(ctx):
   await ctx.send(file=discord.File(''))
 
-client.run('OTU4NDUzMDAwOTQxMjM2Mjc1.YkNi6g.0o_NvcISxE_niCkYF1qEycyS43E')
+client.run('')
