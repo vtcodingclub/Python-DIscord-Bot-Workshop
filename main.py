@@ -49,4 +49,4 @@ async def say(ctx, arg=""):
 async def count(ctx, *args):
     await ctx.send(f"{len(args)}")
 
-client.run('OTU4NDUzMDAwOTQxMjM2Mjc1.YkNi6g.2dxhEN2_CD6xLqbDQLHh0lxaWes')
+client.run('')
