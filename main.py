@@ -14,6 +14,8 @@ async def on_message(message):
     await message.channel.send("Polo")
   if message.content.startswith('Hello!'):
     await message.channel.send(u"\U0001F60D")
+  if message.content.startswith("DM"):
+    await message.author.send("Here is a DM!")
 
 @client.command()
 async def hello(ctx):
@@ -33,11 +35,18 @@ async def embed(ctx):
         title = "Hello World",
         description = "This is a description."
     )
-
     await ctx.send(embed=my_embed)
 
 @client.command()
 async def pic(ctx):
   await ctx.send(file=discord.File(''))
 
-client.run('')
+@client.command()
+async def say(ctx, arg=""):
+    await ctx.send(f"{arg}")
+
+@client.command()
+async def count(ctx, *args):
+    await ctx.send(f"{len(args)}")
+
+client.run('OTU4NDUzMDAwOTQxMjM2Mjc1.YkNi6g.2dxhEN2_CD6xLqbDQLHh0lxaWes')
